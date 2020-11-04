@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        a:link {
+            color: rgb(99, 138, 182);
+            text-decoration: none;
+        }
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .upper {
+            /* background-color: skyblue; */
+            /* width: auto; */
+            /* display: block; */
+        }
+
+        #chelsey {
+            text-align: center;
+            background-color: skyblue;
+            height: 150px;
+            line-height: 40px;
+            width: auto;
+            padding: 0.1%;
+            font-size: 40px;
+            font-family:cursive;
+            color: black;
+            
+        }
+        #sign {
+            float: right;
+            font-size: 20px;
+            line-height: 30px;
+            font-family:cursive;
+        }
+        li {
+            list-style: none;
+        }
+        #menu {
+            margin: 0 auto;
+            padding: 0.01%;
+            background-color: skyblue;
+            border-top: 1px solid rgb(99, 138, 182);
+            color:  rgb(99, 138, 182);
+            font-family:cursive;
+        }
+        #menu ul li {
+            float: left;
+            width: 25%;
+            height: 100%;
+            line-height: 5px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        form {
+            background-clip: border-box;
+            margin: 0 auto;
+            width: 900px;
+            height: 450px;
+            border: 1px solid gray;
+        }
+        #kinds {
+            float: left;
+            margin-left: 50px;
+            line-height: 22px;
+        }
+        #write {
+            float: left;
+            margin-left: 25px;
+        }
+        #fileselect {
+            margin-left: 11px;
+            /* background-color: rgb(99, 138, 182); */
+        }
+        #submit {
+            float: right;
+            margin-right: 280px;
+            background-color: rgb(132, 188, 252);
+        }
+    </style>
+</head>
+<body>
+    <div id="sign" class="upper"><a href="signin.html">sing in /</a><a  href="signup.html">sing up</a></div>
+    <div id="chelsey" class="upper"><h1><a href="main.html">Chelsey</a></h1></div>
+    <div id="menu" class="upper">
+        <ul>
+            <li><a href="who.html">who</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="photo.html">photo</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    <br>
+    </div>  
+    <br><br><br>
+    <form>
+        <br><br>
+        <label id="kinds"> 제목 </label><input type="text" id="write" name="title" size="98" maxlength="100">
+        <br><br>
+        <label id="kinds"> 내용 </label><textarea id="write" cols="85" rows="20" style="resize: none;"></textarea>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <label id="kinds"> 첨부파일 </label><input type="file" id="fileselect" value="파일선택">
+    </form>
+    <br>
+    <input type="submit" id="submit" value="올리기">
+    <br><br>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        a:link {
+            color: rgb(99, 138, 182);
+            text-decoration: none;
+        }
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .upper {
+            /* background-color: skyblue; */
+            /* width: auto; */
+            /* display: block; */
+        }
+
+        #chelsey {
+            text-align: center;
+            background-color: skyblue;
+            height: 150px;
+            line-height: 40px;
+            width: auto;
+            padding: 0.1%;
+            font-size: 40px;
+            font-family:cursive;
+            color: black;
+            
+        }
+        #sign {
+            float: right;
+            font-size: 20px;
+            line-height: 30px;
+            font-family:cursive;
+        }
+        li {
+            list-style: none;
+        }
+        #menu {
+            margin: 0 auto;
+            padding: 0.01%;
+            background-color: skyblue;
+            border-top: 1px solid rgb(99, 138, 182);
+            color:  rgb(99, 138, 182);
+            font-family:cursive;
+        }
+        #menu ul li {
+            
+            float: left;
+            width: 25%;
+            height: 100%;
+            line-height: 5px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #signup {
+            font-family: cursive;
+            color: rgb(99, 138, 182);
+            font-style: oblique;
+            float: right;
+        }
+        form {
+            background-position: center center;
+            background-clip: border-box;
+            margin: 0 auto;
+            padding: 30px;
+            width: 30%;
+            border: 1px solid gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="sign" class="upper"><a href="signin.html">sing in /</a><a  href="signup.html">sing up</a></div>
+    <div id="chelsey" class="upper"><h1><a href="main.html">Chelsey</a></h1></div>
+    <div id="menu" class="upper">
+        <ul>
+            <li><a href="who.html">who</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="photo.html">photo</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    <br>
+    </div>  
+
+    <br><br><br><br><br>
+    <form>
+            <label> 닉네임 : &nbsp;</label><input type="text" name="userId" size="20" maxlength="15"><br>
+            <br>
+            <label> 이메일 : &nbsp;</label><input type="text" name="email" placeholder="abc@gmail.com"><br>
+            <br>
+            <label> 비밀번호 : &nbsp;</label><input type="password" name="userId" size="20" maxlength="15"><br>
+            <br>
+            <label> 비밀번호 확인 : &nbsp;</label><input type="password" name="userId" size="20" maxlength="15" placeholder="한번 더 입력하세요."><br>
+            <br>
+            <label> 휴대폰 번호 : &nbsp;</label><input type="tel" name="phone" size="3"> - <input type="tel" name="phone" size="4"> - <input type="tel" name="phone" size="4">
+            <br>
+            <br>
+            <label> 주소 : &nbsp;</label><input type="text" size="40" name="search">
+            <input type="submit" value="주소찾기"><br>
+            <br>
+            <label> 관심분야 : </label>
+            <input type="checkbox" id="fe" name="interest">
+            <label for="fe">프론트엔드</label>
+            <input type="checkbox" id="be" name="interest">
+            <label for="be">백엔드</label>
+            <input type="checkbox" id="game" name="interest">
+            <label for="game">게임</label>
+            <input type="checkbox" id="picture" name="interest">
+            <label for="picture">사진</label>
+            <br>
+            <br>
+            <input type="submit" id="signup" value="sign up"><br>
+            <br>
+    </form>
+
+    
+</body>
+</html>
